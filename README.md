@@ -1,9 +1,9 @@
 # C-Language Programming
 
 1. **Introduction to C Programming**
-   - [History of C](#)
-   - [Importance and features of C](#)
-   - [Structure of a C program](#)
+   - [History of C](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter01-01.md)
+   - [Importance and features of C](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter01-02.md)
+   - [Structure of a C program](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter01-03.md)
 
 2. **Basic Concepts**
    - [Variables and Data Types](#)
