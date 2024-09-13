@@ -6,10 +6,10 @@
    - [Structure of a C program](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter01-03.md)
 
 2. **Basic Concepts**
-   - [Variables and Data Types](#)
-   - [Keywords in C](#)
-   - [Constants and Literals](#)
-   - [Input and Output in C (printf and scanf)](#)
+   - [Variables and Data Types](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter02-01.md)
+   - [Keywords in C](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter02-02.md)
+   - [Constants and Literals](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter02-03.md)
+   - [Input and Output in C (printf and scanf)](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter02-04.md)
 
 3. **Operators**
    - [Arithmetic Operators](#)
