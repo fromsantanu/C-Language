@@ -1,4 +1,3 @@
-# Chapter: Introduction to C Programming
 
 ## 1. **History of C**
 
