@@ -12,26 +12,26 @@
    - [Input and Output in C (printf and scanf)](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter02-04.md)
 
 3. **Operators**
-   - [Arithmetic Operators](#)
-   - [Relational Operators](#)
-   - [Logical Operators](#)
-   - [Assignment Operators](#)
-   - [Bitwise Operators](#)
-   - [Ternary (Conditional) Operator](#)
-   - [Increment and Decrement Operators](#)
+   - [Arithmetic Operators](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter03-01.md)
+   - [Relational Operators](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter03-02.md)
+   - [Logical Operators](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter03-03.md)
+   - [Assignment Operators](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter03-04.md)
+   - [Bitwise Operators](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter03-05.md)
+   - [Ternary (Conditional) Operator](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter03-06.md)
+   - [Increment and Decrement Operators](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter03-07.md)
 
 4. **Control Flow Statements**
-   - [if, if-else, nested if-else](#)
-   - [switch-case statements](#)
-   - [Loops (for, while, do-while)](#)
-   - [Break, Continue, and Goto statements](#)
+   - [if, if-else, nested if-else](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter04-01.md)
+   - [switch-case statements](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter04-02.md)
+   - [Loops (for, while, do-while)](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter04-03.md)
+   - [Break, Continue, and Goto statements](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter04-04.md)
 
 5. **Functions**
-   - [Definition and declaration of functions](#)
-   - [Function arguments and return values](#)
-   - [Call by value vs Call by reference](#)
-   - [Recursion](#)
-   - [Storage classes (auto, static, extern, register)](#)
+   - [Definition and declaration of functions](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter05-01.md)
+   - [Function arguments and return values](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter05-02.md)
+   - [Call by value vs Call by reference](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter05-03.md)
+   - [Recursion](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter05-04.md)
+   - [Storage classes (auto, static, extern, register)](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter05-05.md)
 
 6. **Arrays and Strings**
    - [One-dimensional arrays](#)
