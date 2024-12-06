@@ -1,4 +1,4 @@
-# C-Language Programming
+# C Programming Tutorial
 
 1. **Introduction to C Programming**
    - [History of C](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter01-01.md)
