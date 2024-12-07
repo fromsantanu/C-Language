@@ -1,4 +1,4 @@
-# Chapter: Pointers to Functions in C
+# Pointers to Functions in C
 
 Pointers to functions in C allow you to dynamically call functions, pass functions as arguments, and implement techniques like callbacks and dynamic dispatching. This chapter explores the concept, syntax, and use cases of function pointers in C programming.
 
