@@ -1,4 +1,4 @@
-# Chapter: Pointers and Strings in C
+# Pointers and Strings in C
 
 In C, strings are represented as arrays of characters terminated by a null character (`'\0'`). The relationship between pointers and strings is central to efficient string manipulation. This chapter explores how pointers interact with strings and how to use pointers for common string operations.
 
