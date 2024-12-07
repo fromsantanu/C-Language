@@ -1,4 +1,4 @@
-# Chapter: Pointers to Structures in C
+# Pointers to Structures in C
 
 Pointers to structures allow efficient access and manipulation of structure members, enabling dynamic memory management and flexibility in data handling. This chapter explores the syntax, use cases, and practical examples of working with pointers to structures.
 
