@@ -1,4 +1,4 @@
-# Chapter: Introduction to Pointers in C
+# Introduction to Pointers in C
 
 Pointers are one of the most powerful and fundamental features of C programming. They provide the ability to directly access and manipulate memory, which is crucial for creating dynamic and efficient programs. This chapter introduces pointers, explains their syntax and basic operations, and covers their importance in C programming.
 
