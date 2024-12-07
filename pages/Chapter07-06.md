@@ -1,4 +1,4 @@
-# Chapter: Dynamic Memory Allocation in C
+# Dynamic Memory Allocation in C
 
 Dynamic memory allocation allows a program to request and manage memory at runtime. This capability is crucial for creating flexible and efficient programs, especially when dealing with data structures like arrays, linked lists, and trees. In C, the standard library provides functions for dynamic memory management: `malloc`, `calloc`, `realloc`, and `free`.
 
