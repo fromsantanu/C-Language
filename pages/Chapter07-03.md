@@ -1,4 +1,4 @@
-# Chapter: Pointers and Arrays in C
+# Pointers and Arrays in C
 
 Pointers and arrays are closely intertwined in C programming. Understanding their relationship allows you to efficiently manipulate and traverse arrays, work with dynamic memory, and implement complex data structures. This chapter explores how pointers interact with arrays and provides practical examples to solidify the concepts.
 
