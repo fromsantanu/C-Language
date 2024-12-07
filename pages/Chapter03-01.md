@@ -1,4 +1,4 @@
-# Chapter: C Operators
+# C Operators
 
 Operators in C are special symbols or keywords used to perform operations on variables and values. They are fundamental building blocks in any program, enabling arithmetic, logical, and bit-level manipulations. In this chapter, we’ll cover the most commonly used operators in C.
 
