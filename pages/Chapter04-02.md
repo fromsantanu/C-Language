@@ -1,4 +1,4 @@
-# Chapter: Switch-Case Statements
+# Switch-Case Statements
 
 The `switch` statement in C is a multi-way decision-making construct that simplifies complex `if-else` ladders. It is used to test a variable against a list of possible values, executing the corresponding block of code for the matching case.
 
