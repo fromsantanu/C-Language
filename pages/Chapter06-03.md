@@ -1,4 +1,4 @@
-# Chapter: String Handling in C
+# String Handling in C
 
 Strings in C are sequences of characters terminated by a **null character** (`'\0'`). They are stored as arrays of `char` data type. C provides several standard library functions for string manipulation, which makes handling strings easier and more efficient.
 
