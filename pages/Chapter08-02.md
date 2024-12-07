@@ -1,4 +1,4 @@
-# Chapter: Nested Structures in C
+# Nested Structures in C
 
 Nested structures in C allow one structure to contain another structure as a member. This enables the creation of hierarchical data representations, which are essential for modeling complex real-world entities.
 
