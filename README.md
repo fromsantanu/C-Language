@@ -34,25 +34,25 @@
    - [Storage classes (auto, static, extern, register)](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter05-05.md)
 
 6. **Arrays and Strings**
-   - [One-dimensional arrays](#)
-   - [Multi-dimensional arrays](#)
-   - [String handling (gets, puts, strcpy, strlen, etc.)](#)
-   - [Arrays as function arguments](#)
+   - [One-dimensional arrays](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter06-01.md)
+   - [Multi-dimensional arrays](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter06-02.md)
+   - [String handling (gets, puts, strcpy, strlen, etc.)](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter06-03.md)
+   - [Arrays as function arguments](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter06-04.md)
 
 7. **Pointers**
-   - [Introduction to pointers](#)
-   - [Pointer arithmetic](#)
-   - [Pointers and arrays](#)
-   - [Pointers and strings](#)
-   - [Pointers to functions](#)
-   - [Dynamic memory allocation (malloc, calloc, free, realloc)](#)
+   - [Introduction to pointers](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter07-01.md)
+   - [Pointer arithmetic](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter07-02.md)
+   - [Pointers and arrays](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter07-03.md)
+   - [Pointers and strings](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter07-04.md)
+   - [Pointers to functions](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter07-05.md)
+   - [Dynamic memory allocation (malloc, calloc, free, realloc)](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter07-06.md)
 
 8. **Structures and Unions**
-   - [Defining and declaring structures](#)
-   - [Nested structures](#)
-   - [Array of structures](#)
-   - [Pointers to structures](#)
-   - [Unions and differences from structures](#)
+   - [Defining and declaring structures](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter08-01.md)
+   - [Nested structures](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter08-02.md)
+   - [Array of structures](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter08-03.md)
+   - [Pointers to structures](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter08-04.md)
+   - [Unions and differences from structures](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter08-05.md)
 
 9. **File Handling**
    - [Opening and closing files](#)
