@@ -1,4 +1,4 @@
-# Chapter: Pointer Arithmetic in C
+# Pointer Arithmetic in C
 
 Pointer arithmetic is a powerful feature in C programming that allows you to perform operations directly on memory addresses. By manipulating pointers, you can navigate through arrays, access specific memory locations, and optimize your code for performance.
 
