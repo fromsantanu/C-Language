@@ -1,4 +1,4 @@
-# Chapter: Loops in C (For, While, Do-While)
+# Loops in C (For, While, Do-While)
 
 Loops are an essential part of programming that allow the repetition of a block of code multiple times based on a condition. In C, there are three types of loops: **for**, **while**, and **do-while**. Each loop has its own use case and structure.
 
