@@ -1,4 +1,4 @@
-# Chapter: Recursion in C
+# Recursion in C
 
 Recursion is a powerful concept in programming where a function calls itself to solve a problem. It is particularly useful for problems that can be broken down into smaller, similar subproblems.
 
