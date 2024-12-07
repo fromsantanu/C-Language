@@ -1,4 +1,4 @@
-# Chapter: Defining and Declaring Structures in C
+# Defining and Declaring Structures in C
 
 Structures in C are user-defined data types that allow grouping related variables of different types into a single entity. They provide a way to organize and manage complex data, enabling better readability, modularity, and efficiency in programs.
 
