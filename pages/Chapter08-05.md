@@ -1,4 +1,4 @@
-# Chapter: Unions and Differences from Structures in C
+# Unions and Differences from Structures in C
 
 Unions in C, like structures, are user-defined data types that allow you to group variables of different types under a single name. However, unions differ significantly in how memory is allocated and how their members are accessed. This chapter explores unions, their syntax, applications, and key differences from structures.
 
