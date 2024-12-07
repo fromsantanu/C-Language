@@ -1,4 +1,4 @@
-# Chapter: Break, Continue, and Goto Statements
+# Break, Continue, and Goto Statements
 
 Control flow statements like `break`, `continue`, and `goto` in C allow you to manage the flow of program execution. These statements can interrupt the normal sequence of execution to handle specific scenarios, such as skipping an iteration, exiting a loop, or jumping to a specific location in the program.
 
