@@ -1,4 +1,4 @@
-# Chapter: If, If-Else, and Nested If-Else
+# If, If-Else, and Nested If-Else
 
 Control flow statements in C allow programmers to make decisions based on certain conditions. The **if**, **if-else**, and **nested if-else** structures are fundamental decision-making constructs in C. In this chapter, we will explore these constructs with detailed explanations and examples.
 
