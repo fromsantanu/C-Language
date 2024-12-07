@@ -1,4 +1,4 @@
-# Chapter: Function Arguments and Return Values
+# Function Arguments and Return Values
 
 Functions in C are powerful tools for modular programming, and their effectiveness lies in how they interact with the rest of the program through **arguments** and **return values**. This chapter covers how to pass data to functions using arguments and retrieve results using return values.
 
