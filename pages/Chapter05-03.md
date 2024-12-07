@@ -1,4 +1,4 @@
-# Chapter: Call by Value vs Call by Reference
+# Call by Value vs Call by Reference
 
 In C programming, functions can accept arguments either by **value** or by **reference**. Understanding the difference between these two mechanisms is crucial for writing effective and efficient programs.
 
