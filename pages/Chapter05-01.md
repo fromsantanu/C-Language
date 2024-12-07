@@ -1,4 +1,4 @@
-# Chapter: Definition and Declaration of Functions
+# Definition and Declaration of Functions
 
 Functions are essential components of any C program. They allow you to modularize your code, improving readability, reusability, and maintainability. This chapter covers the **definition** and **declaration** of functions in C.
 
