@@ -1,4 +1,4 @@
-# Chapter: Array of Structures in C
+# Array of Structures in C
 
 An **array of structures** allows you to manage and store multiple instances of a structure in a single array. This is particularly useful when dealing with collections of entities that share the same set of attributes, such as students, employees, or products.
 
