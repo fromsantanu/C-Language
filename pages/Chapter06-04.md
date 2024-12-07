@@ -1,4 +1,4 @@
-# Chapter: Arrays as Function Arguments in C
+# Arrays as Function Arguments in C
 
 In C, arrays can be passed to functions to allow manipulation of their elements within the function. This chapter explains how arrays are passed to functions, their behavior, and key considerations when working with arrays as function arguments.
 
