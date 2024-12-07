@@ -1,4 +1,4 @@
-# Chapter: Storage Classes in C
+# Storage Classes in C
 
 Storage classes in C define the **scope**, **lifetime**, **visibility**, and **default value** of variables. They control how variables are stored in memory, their accessibility, and their duration in the program.
 
