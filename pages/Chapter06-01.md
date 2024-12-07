@@ -1,4 +1,4 @@
-# Chapter: One-Dimensional Arrays in C
+# One-Dimensional Arrays in C
 
 An **array** is a collection of variables of the same type stored in contiguous memory locations. In C, arrays are used to store and manipulate a collection of data, making it easier to work with multiple values. This chapter focuses on **one-dimensional arrays**, their declaration, initialization, and operations.
 
