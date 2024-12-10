@@ -1,5 +1,5 @@
 # C Programming Tutorial
-## Part I
+## Part I - Basic C Programming
 1. **Introduction to C Programming**
    - [History of C](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter01-01.md)
    - [Importance and features of C](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter01-02.md)
@@ -59,14 +59,15 @@
    - [Reading and writing files (fopen, fclose, fread, fwrite, fscanf, fprintf)]([Opening and closing files](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter09-02.md)
    - [File pointers]([Opening and closing files](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter09-03.md)
    - [Error handling in file operations]([Opening and closing files](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter09-04.md)
-##
-## Part II
-10. **Preprocessors and Macros**
-    - [#define, #include](#)
-    - [Conditional Compilation (#ifdef, #ifndef, #endif)](#)
-    - [Macros with arguments](#)
-    - [File inclusion guards](#)
 
+10. **Preprocessors and Macros**
+    - [#define, #include](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter10-01.md)
+    - [Conditional Compilation (#ifdef, #ifndef, #endif)](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter10-02.md)
+    - [Macros with arguments](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter10-03.md)
+    - [File inclusion guards](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter10-04.md)
+
+##
+## Part II - Advanced C Concepts
 11. **Memory Management**
     - [Static vs Dynamic memory allocation](#)
     - [malloc, calloc, realloc, and free](#)
