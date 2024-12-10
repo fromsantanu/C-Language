@@ -1,4 +1,4 @@
-# C Programming Tutorial
+# C Programming Tutorial (Complete Course)
 ## Part I - Basic C Programming
 1. **Introduction to C Programming**
    - [History of C](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter01-01.md)
