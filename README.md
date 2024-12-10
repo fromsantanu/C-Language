@@ -55,10 +55,10 @@
    - [Unions and differences from structures](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter08-05.md)
 
 9. **File Handling**
-   - [Opening and closing files](#)
-   - [Reading and writing files (fopen, fclose, fread, fwrite, fscanf, fprintf)](#)
-   - [File pointers](#)
-   - Error handling in file operations](#)
+   - [Opening and closing files](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter09-01.md)
+   - [Reading and writing files (fopen, fclose, fread, fwrite, fscanf, fprintf)]([Opening and closing files](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter09-02.md)
+   - [File pointers]([Opening and closing files](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter09-03.md)
+   - [Error handling in file operations]([Opening and closing files](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter09-04.md)
 ##
 ## Part II
 10. **Preprocessors and Macros**
