@@ -58,8 +58,8 @@
    - [Opening and closing files](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter09-01.md)
    - [Reading and writing files (fopen, fclose, fread, fwrite, fscanf, fprintf)](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter09-02.md)
    - [Opening and closing files](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter09-03.md)
-   - [File pointers]([Opening and closing files](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter09-04.md)
-   - [Error handling in file operations]([Opening and closing files](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter09-05.md)
+   - [File pointers](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter09-04.md)
+   - [Error handling in file operations](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter09-05.md)
 
 10. **Preprocessors and Macros**
     - [#define, #include](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter10-01.md)
