@@ -254,3 +254,204 @@ Reversed array:
 ---
 
 One-dimensional arrays are fundamental in C programming, allowing efficient storage and manipulation of data. In the next chapter, we will explore **multi-dimensional arrays**, which enable working with more complex data structures like matrices.
+
+## Here are the solutions to the exercises implemented in C:
+
+---
+
+### 1. Program to find the average of elements in a one-dimensional array
+
+```c
+#include <stdio.h>
+
+double findAverage(int arr[], int size) {
+    int sum = 0;
+    for (int i = 0; i < size; i++) {
+        sum += arr[i];
+    }
+    return (double)sum / size;
+}
+
+int main() {
+    int n;
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    printf("Enter %d elements: ", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    double average = findAverage(arr, n);
+    printf("The average of the elements is: %.2f\n", average);
+    return 0;
+}
+```
+
+---
+
+### 2. Program to find the smallest element in an array
+
+```c
+#include <stdio.h>
+
+int findSmallest(int arr[], int size) {
+    int smallest = arr[0];
+    for (int i = 1; i < size; i++) {
+        if (arr[i] < smallest) {
+            smallest = arr[i];
+        }
+    }
+    return smallest;
+}
+
+int main() {
+    int n;
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    printf("Enter %d elements: ", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    int smallest = findSmallest(arr, n);
+    printf("The smallest element is: %d\n", smallest);
+    return 0;
+}
+```
+
+---
+
+### 3. Program to count the number of occurrences of a specific value in an array
+
+```c
+#include <stdio.h>
+
+int countOccurrences(int arr[], int size, int value) {
+    int count = 0;
+    for (int i = 0; i < size; i++) {
+        if (arr[i] == value) {
+            count++;
+        }
+    }
+    return count;
+}
+
+int main() {
+    int n, value;
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    printf("Enter %d elements: ", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Enter the value to count: ");
+    scanf("%d", &value);
+
+    int occurrences = countOccurrences(arr, n, value);
+    printf("The value %d occurs %d times in the array.\n", value, occurrences);
+    return 0;
+}
+```
+
+---
+
+### 4. Program to shift all elements of an array to the right by one position
+
+```c
+#include <stdio.h>
+
+void shiftRight(int arr[], int size) {
+    int last = arr[size - 1];
+    for (int i = size - 1; i > 0; i--) {
+        arr[i] = arr[i - 1];
+    }
+    arr[0] = last;
+}
+
+int main() {
+    int n;
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    printf("Enter %d elements: ", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    shiftRight(arr, n);
+
+    printf("Array after shifting right: ");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+    return 0;
+}
+```
+
+---
+
+### 5. Program to merge two one-dimensional arrays into a single array
+
+```c
+#include <stdio.h>
+
+void mergeArrays(int arr1[], int size1, int arr2[], int size2, int result[]) {
+    for (int i = 0; i < size1; i++) {
+        result[i] = arr1[i];
+    }
+    for (int i = 0; i < size2; i++) {
+        result[size1 + i] = arr2[i];
+    }
+}
+
+int main() {
+    int n1, n2;
+    printf("Enter the number of elements in the first array: ");
+    scanf("%d", &n1);
+    int arr1[n1];
+    printf("Enter %d elements for the first array: ", n1);
+    for (int i = 0; i < n1; i++) {
+        scanf("%d", &arr1[i]);
+    }
+
+    printf("Enter the number of elements in the second array: ");
+    scanf("%d", &n2);
+    int arr2[n2];
+    printf("Enter %d elements for the second array: ", n2);
+    for (int i = 0; i < n2; i++) {
+        scanf("%d", &arr2[i]);
+    }
+
+    int mergedArray[n1 + n2];
+    mergeArrays(arr1, n1, arr2, n2, mergedArray);
+
+    printf("Merged array: ");
+    for (int i = 0; i < n1 + n2; i++) {
+        printf("%d ", mergedArray[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
+```
+
+---
+
+### Summary:
+
+1. **Average of Elements**: Computes the average by summing all elements and dividing by the size of the array.
+2. **Smallest Element**: Iterates through the array to find the smallest element.
+3. **Count Occurrences**: Counts how many times a specified value appears in the array.
+4. **Shift Elements Right**: Moves each element to the next index, with the last element wrapping around to the first index.
+5. **Merge Arrays**: Combines two arrays into a single array by copying their elements sequentially.
+
+These exercises demonstrate practical array manipulations in C.
