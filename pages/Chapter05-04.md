@@ -246,3 +246,140 @@ A: 1
 ---
 
 Recursion is a fundamental concept in C programming, enabling elegant solutions to complex problems. However, it must be used judiciously to avoid performance and memory issues. In the next chapter, we will explore **arrays**, a vital data structure in C that complements recursive and iterative programming techniques.
+
+## Here are the solutions to the exercises implemented in C:
+
+---
+
+### 1. Recursive function to calculate the greatest common divisor (GCD)
+
+```c
+#include <stdio.h>
+
+// Recursive function to calculate GCD
+int gcd(int a, int b) {
+    if (b == 0)
+        return a;
+    return gcd(b, a % b);
+}
+
+int main() {
+    int num1, num2;
+    printf("Enter two integers to find their GCD: ");
+    scanf("%d %d", &num1, &num2);
+    printf("The GCD of %d and %d is: %d\n", num1, num2, gcd(num1, num2));
+    return 0;
+}
+```
+
+---
+
+### 2. Recursive function to reverse a string
+
+```c
+#include <stdio.h>
+#include <string.h>
+
+// Recursive function to reverse a string
+void reverseString(char *str, int start, int end) {
+    if (start >= end)
+        return;
+    char temp = str[start];
+    str[start] = str[end];
+    str[end] = temp;
+    reverseString(str, start + 1, end - 1);
+}
+
+int main() {
+    char str[100];
+    printf("Enter a string: ");
+    scanf("%s", str);
+    int length = strlen(str);
+    reverseString(str, 0, length - 1);
+    printf("Reversed string: %s\n", str);
+    return 0;
+}
+```
+
+---
+
+### 3. Program to find the height of a binary tree using recursion
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+// Definition of a binary tree node
+struct Node {
+    int data;
+    struct Node *left, *right;
+};
+
+// Function to create a new node
+struct Node* newNode(int data) {
+    struct Node* node = (struct Node*)malloc(sizeof(struct Node));
+    node->data = data;
+    node->left = node->right = NULL;
+    return node;
+}
+
+// Recursive function to calculate the height of a binary tree
+int findHeight(struct Node* root) {
+    if (root == NULL)
+        return 0;
+    int leftHeight = findHeight(root->left);
+    int rightHeight = findHeight(root->right);
+    return 1 + (leftHeight > rightHeight ? leftHeight : rightHeight);
+}
+
+int main() {
+    // Creating a sample binary tree
+    struct Node* root = newNode(1);
+    root->left = newNode(2);
+    root->right = newNode(3);
+    root->left->left = newNode(4);
+    root->left->right = newNode(5);
+
+    printf("The height of the binary tree is: %d\n", findHeight(root));
+    return 0;
+}
+```
+
+---
+
+### 4. Program to solve the Towers of Hanoi problem using recursion
+
+```c
+#include <stdio.h>
+
+// Recursive function to solve Towers of Hanoi
+void towersOfHanoi(int n, char from_rod, char to_rod, char aux_rod) {
+    if (n == 1) {
+        printf("Move disk 1 from %c to %c\n", from_rod, to_rod);
+        return;
+    }
+    towersOfHanoi(n - 1, from_rod, aux_rod, to_rod);
+    printf("Move disk %d from %c to %c\n", n, from_rod, to_rod);
+    towersOfHanoi(n - 1, aux_rod, to_rod, from_rod);
+}
+
+int main() {
+    int n;
+    printf("Enter the number of disks: ");
+    scanf("%d", &n);
+    printf("The sequence of moves to solve Towers of Hanoi with %d disks is:\n", n);
+    towersOfHanoi(n, 'A', 'C', 'B'); // A is the source, C is the destination, B is auxiliary
+    return 0;
+}
+```
+
+---
+
+### Explanation:
+
+1. **GCD Calculation**: Uses the Euclidean algorithm implemented recursively.
+2. **Reverse a String**: Recursively swaps characters from both ends of the string until the middle is reached.
+3. **Binary Tree Height**: Recursively calculates the height of the left and right subtrees and returns the maximum of the two plus one.
+4. **Towers of Hanoi**: Recursively solves the problem by moving disks between rods, adhering to the problem's rules.
+
+These solutions demonstrate recursion's power and clarity for solving problems with hierarchical or repetitive structures.
