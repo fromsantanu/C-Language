@@ -236,3 +236,116 @@ Sum: 9, Product: 20
 ---
 
 Understanding **call by value** and **call by reference** is fundamental for designing efficient functions and managing memory effectively in C programs. By mastering these concepts, you can write modular, reusable, and optimized code. In the next chapter, we will explore **recursion**, an advanced concept in which functions call themselves to solve problems.
+
+## Here are the solutions to the exercises implemented in C using **call by reference**:
+
+---
+
+### 1. Program to calculate the area and perimeter of a rectangle using call by reference
+
+```c
+#include <stdio.h>
+
+// Function to calculate area and perimeter
+void calculateRectangle(int length, int width, int *area, int *perimeter) {
+    *area = length * width;
+    *perimeter = 2 * (length + width);
+}
+
+int main() {
+    int length, width, area, perimeter;
+
+    printf("Enter the length and width of the rectangle: ");
+    scanf("%d %d", &length, &width);
+
+    calculateRectangle(length, width, &area, &perimeter);
+
+    printf("Area: %d\n", area);
+    printf("Perimeter: %d\n", perimeter);
+
+    return 0;
+}
+```
+
+---
+
+### 2. Program to reverse an array using call by reference
+
+```c
+#include <stdio.h>
+
+// Function to reverse an array
+void reverseArray(int *arr, int size) {
+    int start = 0, end = size - 1, temp;
+    while (start < end) {
+        temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
+    }
+}
+
+int main() {
+    int n;
+
+    printf("Enter the number of elements in the array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    printf("Enter %d elements: ", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    reverseArray(arr, n);
+
+    printf("Reversed array: ");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
+```
+
+---
+
+### 3. Program to compare two numbers and update the larger value to be twice its original value using call by reference
+
+```c
+#include <stdio.h>
+
+// Function to compare two numbers and update the larger one
+void updateLargerValue(int *a, int *b) {
+    if (*a > *b) {
+        *a *= 2;
+    } else if (*b > *a) {
+        *b *= 2;
+    }
+}
+
+int main() {
+    int num1, num2;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+
+    updateLargerValue(&num1, &num2);
+
+    printf("Updated values: num1 = %d, num2 = %d\n", num1, num2);
+
+    return 0;
+}
+```
+
+---
+
+### Explanation:
+
+1. **Area and Perimeter of Rectangle**: The function `calculateRectangle` modifies the `area` and `perimeter` variables directly using pointers.
+2. **Reverse an Array**: The `reverseArray` function takes a pointer to the array and its size, swapping elements to reverse the array in place.
+3. **Update Larger Value**: The `updateLargerValue` function takes pointers to two integers and modifies the larger one directly by doubling its value.
+
+These examples effectively demonstrate the use of call by reference to manipulate variables and arrays in C.
