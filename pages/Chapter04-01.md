@@ -193,3 +193,75 @@ int main() {
 ---
 
 By understanding `if`, `if-else`, and `nested if-else` constructs, you can create programs that handle a variety of decision-making scenarios. In the next chapter, we will explore loops, which allow you to repeat actions based on conditions.
+
+## Answers to execrcises
+
+Here are the solutions to the given exercises:
+
+---
+
+### 1. Program to check if a number is divisible by both 3 and 5
+
+```python
+# Check divisibility by both 3 and 5
+def check_divisibility(num):
+    if num % 3 == 0 and num % 5 == 0:
+        return f"{num} is divisible by both 3 and 5."
+    else:
+        return f"{num} is not divisible by both 3 and 5."
+
+# Test the program
+number = int(input("Enter a number: "))
+print(check_divisibility(number))
+```
+
+---
+
+### 2. Program to determine if a given year is a leap year using nested if statements
+
+```python
+# Check if a year is a leap year
+def is_leap_year(year):
+    if year % 4 == 0:
+        if year % 100 == 0:
+            if year % 400 == 0:
+                return f"{year} is a leap year."
+            else:
+                return f"{year} is not a leap year."
+        else:
+            return f"{year} is a leap year."
+    else:
+        return f"{year} is not a leap year."
+
+# Test the program
+year = int(input("Enter a year: "))
+print(is_leap_year(year))
+```
+
+---
+
+### 3. Program to find the largest of three numbers using if-else or nested if-else
+
+```python
+# Find the largest of three numbers
+def find_largest(a, b, c):
+    if a >= b:
+        if a >= c:
+            return f"The largest number is {a}."
+        else:
+            return f"The largest number is {c}."
+    else:
+        if b >= c:
+            return f"The largest number is {b}."
+        else:
+            return f"The largest number is {c}."
+
+# Test the program
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+num3 = int(input("Enter the third number: "))
+print(find_largest(num1, num2, num3))
+```
+
+---
+
