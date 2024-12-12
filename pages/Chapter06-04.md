@@ -260,3 +260,229 @@ Matrix elements:
 ---
 
 Passing arrays as function arguments is a fundamental concept in C programming. It allows efficient manipulation of large datasets and forms the basis for many algorithms and data structures. In the next chapter, we will explore **pointers**, which provide even more flexibility in working with arrays and other data structures.
+
+## Here are the solutions to the exercises implemented in C:
+
+---
+
+### 1. Function to calculate the sum of elements in an array
+
+```c
+#include <stdio.h>
+
+int sumArray(int arr[], int size) {
+    int sum = 0;
+    for (int i = 0; i < size; i++) {
+        sum += arr[i];
+    }
+    return sum;
+}
+
+int main() {
+    int n;
+    printf("Enter the number of elements in the array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    printf("Enter %d elements: ", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("The sum of the array elements is: %d\n", sumArray(arr, n));
+    return 0;
+}
+```
+
+---
+
+### 2. Function to reverse an array in place
+
+```c
+#include <stdio.h>
+
+void reverseArray(int arr[], int size) {
+    for (int i = 0, j = size - 1; i < j; i++, j--) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+}
+
+int main() {
+    int n;
+    printf("Enter the number of elements in the array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    printf("Enter %d elements: ", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    reverseArray(arr, n);
+
+    printf("Reversed array: ");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+    return 0;
+}
+```
+
+---
+
+### 3. Function to find the maximum and minimum values in an array
+
+```c
+#include <stdio.h>
+
+void findMaxMin(int arr[], int size, int *max, int *min) {
+    *max = arr[0];
+    *min = arr[0];
+
+    for (int i = 1; i < size; i++) {
+        if (arr[i] > *max) {
+            *max = arr[i];
+        }
+        if (arr[i] < *min) {
+            *min = arr[i];
+        }
+    }
+}
+
+int main() {
+    int n, max, min;
+    printf("Enter the number of elements in the array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    printf("Enter %d elements: ", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    findMaxMin(arr, n, &max, &min);
+
+    printf("Maximum value: %d\n", max);
+    printf("Minimum value: %d\n", min);
+    return 0;
+}
+```
+
+---
+
+### 4. Program to compute the transpose of a 2D matrix
+
+```c
+#include <stdio.h>
+
+void transposeMatrix(int rows, int cols, int mat[rows][cols], int transposed[cols][rows]) {
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            transposed[j][i] = mat[i][j];
+        }
+    }
+}
+
+int main() {
+    int rows, cols;
+    printf("Enter the number of rows and columns: ");
+    scanf("%d %d", &rows, &cols);
+
+    int mat[rows][cols], transposed[cols][rows];
+
+    printf("Enter elements of the matrix:\n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            scanf("%d", &mat[i][j]);
+        }
+    }
+
+    transposeMatrix(rows, cols, mat, transposed);
+
+    printf("Transposed matrix:\n");
+    for (int i = 0; i < cols; i++) {
+        for (int j = 0; j < rows; j++) {
+            printf("%d ", transposed[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+```
+
+---
+
+### 5. Function to merge two sorted arrays into a single sorted array
+
+```c
+#include <stdio.h>
+
+void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2, int result[]) {
+    int i = 0, j = 0, k = 0;
+
+    // Merge arrays while elements remain in both
+    while (i < size1 && j < size2) {
+        if (arr1[i] <= arr2[j]) {
+            result[k++] = arr1[i++];
+        } else {
+            result[k++] = arr2[j++];
+        }
+    }
+
+    // Copy remaining elements from arr1
+    while (i < size1) {
+        result[k++] = arr1[i++];
+    }
+
+    // Copy remaining elements from arr2
+    while (j < size2) {
+        result[k++] = arr2[j++];
+    }
+}
+
+int main() {
+    int n1, n2;
+
+    printf("Enter the number of elements in the first sorted array: ");
+    scanf("%d", &n1);
+    int arr1[n1];
+    printf("Enter %d sorted elements: ", n1);
+    for (int i = 0; i < n1; i++) {
+        scanf("%d", &arr1[i]);
+    }
+
+    printf("Enter the number of elements in the second sorted array: ");
+    scanf("%d", &n2);
+    int arr2[n2];
+    printf("Enter %d sorted elements: ", n2);
+    for (int i = 0; i < n2; i++) {
+        scanf("%d", &arr2[i]);
+    }
+
+    int result[n1 + n2];
+    mergeSortedArrays(arr1, n1, arr2, n2, result);
+
+    printf("Merged sorted array: ");
+    for (int i = 0; i < n1 + n2; i++) {
+        printf("%d ", result[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
+```
+
+---
+
+### Summary:
+
+1. **Sum of Array Elements**: Computes the sum of integers in the array.
+2. **Reverse Array**: Reverses the array in place by swapping elements.
+3. **Max and Min Values**: Finds the largest and smallest values using pointers.
+4. **Matrix Transpose**: Computes the transpose of a 2D matrix.
+5. **Merge Sorted Arrays**: Merges two sorted arrays into one, maintaining sorted order.
+
+These programs cover common and important array manipulations in C.
