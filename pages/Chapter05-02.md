@@ -252,3 +252,96 @@ In C, function arguments can behave differently based on how they are passed:
 ---
 
 By mastering function arguments and return values, you can design efficient and modular programs. In the next chapter, we will explore **recursion**, a powerful technique where a function calls itself to solve complex problems.
+
+## Here are the solutions to the exercises implemented in C:
+
+---
+
+### 1. Program with a function to calculate the greatest common divisor (GCD) of two integers
+
+```c
+#include <stdio.h>
+
+// Function to calculate GCD
+int gcd(int a, int b) {
+    while (b != 0) {
+        int temp = b;
+        b = a % b;
+        a = temp;
+    }
+    return a;
+}
+
+int main() {
+    int num1, num2;
+    printf("Enter two integers to find their GCD: ");
+    scanf("%d %d", &num1, &num2);
+    printf("The GCD of %d and %d is: %d\n", num1, num2, gcd(num1, num2));
+    return 0;
+}
+```
+
+---
+
+### 2. Program with a function to find the largest among three integers
+
+```c
+#include <stdio.h>
+
+// Function to find the largest of three numbers
+int findLargest(int a, int b, int c) {
+    if (a >= b && a >= c) {
+        return a;
+    } else if (b >= a && b >= c) {
+        return b;
+    } else {
+        return c;
+    }
+}
+
+int main() {
+    int num1, num2, num3;
+    printf("Enter three integers: ");
+    scanf("%d %d %d", &num1, &num2, &num3);
+    printf("The largest among %d, %d, and %d is: %d\n", num1, num2, num3, findLargest(num1, num2, num3));
+    return 0;
+}
+```
+
+---
+
+### 3. Program to calculate the area and perimeter of a rectangle using a function that returns multiple values
+
+Since C does not support multiple return values natively, we use pointers to achieve this.
+
+```c
+#include <stdio.h>
+
+// Function to calculate area and perimeter
+void calculateRectangle(int length, int width, int *area, int *perimeter) {
+    *area = length * width;
+    *perimeter = 2 * (length + width);
+}
+
+int main() {
+    int length, width, area, perimeter;
+    printf("Enter the length and width of the rectangle: ");
+    scanf("%d %d", &length, &width);
+    
+    calculateRectangle(length, width, &area, &perimeter);
+
+    printf("Area of the rectangle: %d\n", area);
+    printf("Perimeter of the rectangle: %d\n", perimeter);
+    return 0;
+}
+```
+
+---
+
+### Explanation:
+
+1. **GCD Calculation**: Uses the Euclidean algorithm implemented with a `while` loop to find the GCD of two integers.
+2. **Largest Among Three Integers**: Compares three integers using conditional statements to return the largest.
+3. **Rectangle Area and Perimeter**: The function `calculateRectangle` calculates both the area and perimeter of a rectangle. Pointers are used to return multiple values.
+
+These solutions are efficient and illustrate important concepts like recursion, conditional statements, and the use of pointers for returning multiple values.
