@@ -194,9 +194,7 @@ int main() {
 
 By understanding `if`, `if-else`, and `nested if-else` constructs, you can create programs that handle a variety of decision-making scenarios. In the next chapter, we will explore loops, which allow you to repeat actions based on conditions.
 
-## Answers to execrcises
-
-Here are the solutions to the given exercises:
+## Here are the solutions to the given exercises:
 
 ---
 
