@@ -279,3 +279,122 @@ int main() {
 ---
 
 By understanding and mastering loops, you can efficiently handle repetitive tasks in your programs. Loops, combined with control statements, allow for flexible and powerful programming. In the next chapter, we will delve into **arrays**, a critical data structure in C.
+
+## Here are the solutions to the exercises implemented in C:
+
+---
+
+### 1. Program to print the Fibonacci series up to a given number using a `for` loop
+
+```c
+#include <stdio.h>
+
+void printFibonacci(int n) {
+    int a = 0, b = 1, next;
+    printf("Fibonacci series up to %d: ", n);
+    for (int i = 1; i <= n; i++) {
+        printf("%d ", a);
+        next = a + b;
+        a = b;
+        b = next;
+    }
+    printf("\n");
+}
+
+int main() {
+    int num;
+    printf("Enter the number of terms: ");
+    scanf("%d", &num);
+    printFibonacci(num);
+    return 0;
+}
+```
+
+---
+
+### 2. Program to reverse a number using a `while` loop
+
+```c
+#include <stdio.h>
+
+int reverseNumber(int num) {
+    int reversed = 0;
+    while (num != 0) {
+        reversed = reversed * 10 + num % 10;
+        num /= 10;
+    }
+    return reversed;
+}
+
+int main() {
+    int number;
+    printf("Enter a number to reverse: ");
+    scanf("%d", &number);
+    printf("Reversed number: %d\n", reverseNumber(number));
+    return 0;
+}
+```
+
+---
+
+### 3. Program to check if a number is a palindrome using a `do-while` loop
+
+```c
+#include <stdio.h>
+
+int isPalindrome(int num) {
+    int reversed = 0, original = num, remainder;
+    do {
+        remainder = num % 10;
+        reversed = reversed * 10 + remainder;
+        num /= 10;
+    } while (num != 0);
+    return (original == reversed);
+}
+
+int main() {
+    int number;
+    printf("Enter a number to check if it is a palindrome: ");
+    scanf("%d", &number);
+    if (isPalindrome(number)) {
+        printf("%d is a palindrome.\n", number);
+    } else {
+        printf("%d is not a palindrome.\n", number);
+    }
+    return 0;
+}
+```
+
+---
+
+### 4. Program to print a multiplication table for numbers 1 through 5 using nested loops
+
+```c
+#include <stdio.h>
+
+void printMultiplicationTable() {
+    printf("Multiplication Table (1 to 5):\n");
+    for (int i = 1; i <= 5; i++) {
+        for (int j = 1; j <= 10; j++) {
+            printf("%d x %d = %d\t", i, j, i * j);
+        }
+        printf("\n");
+    }
+}
+
+int main() {
+    printMultiplicationTable();
+    return 0;
+}
+```
+
+---
+
+### Explanation:
+
+1. **Fibonacci Series**: Prints the Fibonacci series up to `n` terms using a `for` loop.
+2. **Reverse a Number**: Reverses the digits of a number using a `while` loop.
+3. **Palindrome Check**: Uses a `do-while` loop to reverse the number and checks if it's the same as the original.
+4. **Multiplication Table**: Prints the multiplication table for numbers 1 through 5 using nested `for` loops. 
+
+These programs are straightforward and designed to demonstrate the use of loops effectively.
