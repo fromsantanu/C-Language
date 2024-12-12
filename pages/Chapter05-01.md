@@ -206,3 +206,89 @@ Hello, welcome to C programming!
 ---
 
 By understanding the declaration and definition of functions, you can modularize your code and make it reusable. In the next chapter, we will explore **function parameters and arguments**, including pass-by-value and pass-by-reference concepts.
+
+# Here are the solutions to the exercises implemented in C:
+
+---
+
+### 1. Program with a function `multiply` that takes two integers as parameters and returns their product
+
+```c
+#include <stdio.h>
+
+// Function to multiply two integers
+int multiply(int a, int b) {
+    return a * b;
+}
+
+int main() {
+    int num1, num2;
+    printf("Enter two integers: ");
+    scanf("%d %d", &num1, &num2);
+    printf("The product of %d and %d is: %d\n", num1, num2, multiply(num1, num2));
+    return 0;
+}
+```
+
+---
+
+### 2. Program that calculates the factorial of a number using a function
+
+```c
+#include <stdio.h>
+
+// Function to calculate the factorial
+long long factorial(int n) {
+    if (n == 0 || n == 1) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+
+int main() {
+    int num;
+    printf("Enter a number to calculate its factorial: ");
+    scanf("%d", &num);
+    if (num < 0) {
+        printf("Factorial is not defined for negative numbers.\n");
+    } else {
+        printf("The factorial of %d is: %lld\n", num, factorial(num));
+    }
+    return 0;
+}
+```
+
+---
+
+### 3. Program with a function `isEven` that returns 1 if a number is even and 0 otherwise
+
+```c
+#include <stdio.h>
+
+// Function to check if a number is even
+int isEven(int num) {
+    return num % 2 == 0;
+}
+
+int main() {
+    int number;
+    printf("Enter a number: ");
+    scanf("%d", &number);
+    if (isEven(number)) {
+        printf("%d is even.\n", number);
+    } else {
+        printf("%d is odd.\n", number);
+    }
+    return 0;
+}
+```
+
+---
+
+### Explanation:
+
+1. **`multiply` Function**: This function takes two integers as parameters, multiplies them, and returns the product.
+2. **Factorial Calculation**: A recursive function `factorial` calculates the factorial of a number. It handles the base case of 0 or 1 by returning 1.
+3. **`isEven` Function**: This function checks if a number is divisible by 2. It returns `1` if true (even) and `0` otherwise (odd). 
+
+These programs demonstrate the use of functions in C to modularize and simplify the logic for reusability.
