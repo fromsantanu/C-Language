@@ -242,3 +242,254 @@ The memory layout is:
 ---
 
 Multi-dimensional arrays are powerful tools for handling complex data structures and performing operations like matrix calculations. Mastering these concepts lays the foundation for solving advanced computational problems. In the next chapter, we will delve into **strings in C**, which are implemented as character arrays.
+
+## Here are the solutions to the exercises implemented in C:
+
+---
+
+### 1. Program to add two 2D matrices of the same size
+
+```c
+#include <stdio.h>
+
+void addMatrices(int rows, int cols, int mat1[rows][cols], int mat2[rows][cols], int result[rows][cols]) {
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            result[i][j] = mat1[i][j] + mat2[i][j];
+        }
+    }
+}
+
+int main() {
+    int rows, cols;
+    printf("Enter the number of rows and columns: ");
+    scanf("%d %d", &rows, &cols);
+
+    int mat1[rows][cols], mat2[rows][cols], result[rows][cols];
+
+    printf("Enter elements of first matrix:\n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            scanf("%d", &mat1[i][j]);
+        }
+    }
+
+    printf("Enter elements of second matrix:\n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            scanf("%d", &mat2[i][j]);
+        }
+    }
+
+    addMatrices(rows, cols, mat1, mat2, result);
+
+    printf("Resultant matrix:\n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            printf("%d ", result[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+```
+
+---
+
+### 2. Program to transpose a 2D matrix
+
+```c
+#include <stdio.h>
+
+void transposeMatrix(int rows, int cols, int mat[rows][cols], int transposed[cols][rows]) {
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            transposed[j][i] = mat[i][j];
+        }
+    }
+}
+
+int main() {
+    int rows, cols;
+    printf("Enter the number of rows and columns: ");
+    scanf("%d %d", &rows, &cols);
+
+    int mat[rows][cols], transposed[cols][rows];
+
+    printf("Enter elements of the matrix:\n");
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            scanf("%d", &mat[i][j]);
+        }
+    }
+
+    transposeMatrix(rows, cols, mat, transposed);
+
+    printf("Transposed matrix:\n");
+    for (int i = 0; i < cols; i++) {
+        for (int j = 0; j < rows; j++) {
+            printf("%d ", transposed[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+```
+
+---
+
+### 3. Program to multiply two matrices
+
+```c
+#include <stdio.h>
+
+void multiplyMatrices(int rows1, int cols1, int mat1[rows1][cols1], int rows2, int cols2, int mat2[rows2][cols2], int result[rows1][cols2]) {
+    for (int i = 0; i < rows1; i++) {
+        for (int j = 0; j < cols2; j++) {
+            result[i][j] = 0;
+            for (int k = 0; k < cols1; k++) {
+                result[i][j] += mat1[i][k] * mat2[k][j];
+            }
+        }
+    }
+}
+
+int main() {
+    int rows1, cols1, rows2, cols2;
+
+    printf("Enter rows and columns of first matrix: ");
+    scanf("%d %d", &rows1, &cols1);
+
+    printf("Enter rows and columns of second matrix: ");
+    scanf("%d %d", &rows2, &cols2);
+
+    if (cols1 != rows2) {
+        printf("Matrix multiplication not possible.\n");
+        return 1;
+    }
+
+    int mat1[rows1][cols1], mat2[rows2][cols2], result[rows1][cols2];
+
+    printf("Enter elements of first matrix:\n");
+    for (int i = 0; i < rows1; i++) {
+        for (int j = 0; j < cols1; j++) {
+            scanf("%d", &mat1[i][j]);
+        }
+    }
+
+    printf("Enter elements of second matrix:\n");
+    for (int i = 0; i < rows2; i++) {
+        for (int j = 0; j < cols2; j++) {
+            scanf("%d", &mat2[i][j]);
+        }
+    }
+
+    multiplyMatrices(rows1, cols1, mat1, rows2, cols2, mat2, result);
+
+    printf("Resultant matrix:\n");
+    for (int i = 0; i < rows1; i++) {
+        for (int j = 0; j < cols2; j++) {
+            printf("%d ", result[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
+```
+
+---
+
+### 4. Program to find the sum of all elements in a 3D array
+
+```c
+#include <stdio.h>
+
+int sum3DArray(int x, int y, int z, int arr[x][y][z]) {
+    int sum = 0;
+    for (int i = 0; i < x; i++) {
+        for (int j = 0; j < y; j++) {
+            for (int k = 0; k < z; k++) {
+                sum += arr[i][j][k];
+            }
+        }
+    }
+    return sum;
+}
+
+int main() {
+    int x, y, z;
+    printf("Enter the dimensions of the 3D array (x y z): ");
+    scanf("%d %d %d", &x, &y, &z);
+
+    int arr[x][y][z];
+
+    printf("Enter elements of the 3D array:\n");
+    for (int i = 0; i < x; i++) {
+        for (int j = 0; j < y; j++) {
+            for (int k = 0; k < z; k++) {
+                scanf("%d", &arr[i][j][k]);
+            }
+        }
+    }
+
+    int totalSum = sum3DArray(x, y, z, arr);
+    printf("The sum of all elements in the 3D array is: %d\n", totalSum);
+    return 0;
+}
+```
+
+---
+
+### 5. Program to check if a given 2D array is symmetric
+
+```c
+#include <stdio.h>
+
+int isSymmetric(int size, int mat[size][size]) {
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            if (mat[i][j] != mat[j][i]) {
+                return 0; // Not symmetric
+            }
+        }
+    }
+    return 1; // Symmetric
+}
+
+int main() {
+    int size;
+    printf("Enter the size of the square matrix: ");
+    scanf("%d", &size);
+
+    int mat[size][size];
+    printf("Enter elements of the matrix:\n");
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            scanf("%d", &mat[i][j]);
+        }
+    }
+
+    if (isSymmetric(size, mat)) {
+        printf("The matrix is symmetric.\n");
+    } else {
+        printf("The matrix is not symmetric.\n");
+    }
+
+    return 0;
+}
+```
+
+---
+
+### Summary:
+
+1. **Add Matrices**: Adds corresponding elements of two matrices.
+2. **Transpose Matrix**: Switches rows and columns.
+3. **Matrix Multiplication**: Multiplies two matrices.
+4. **Sum of 3D Array**: Computes the sum of all elements in a 3D array.
+5. **Symmetric Matrix Check**: Compares a matrix with its transpose.
+
+These examples cover important operations on matrices and arrays in C.
