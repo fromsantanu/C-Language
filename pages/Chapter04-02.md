@@ -250,3 +250,137 @@ int main() {
 ---
 
 In this chapter, we explored the `switch-case` statement, a powerful tool for decision-making in C programs. In the next chapter, we will discuss **loops**, which allow repeating actions efficiently.
+
+## Here are the solutions to the exercises implemented in C:
+
+---
+
+### 1. Program to display the name of the month based on a number input
+
+```c
+#include <stdio.h>
+
+void displayMonth(int month) {
+    switch (month) {
+        case 1: printf("January\n"); break;
+        case 2: printf("February\n"); break;
+        case 3: printf("March\n"); break;
+        case 4: printf("April\n"); break;
+        case 5: printf("May\n"); break;
+        case 6: printf("June\n"); break;
+        case 7: printf("July\n"); break;
+        case 8: printf("August\n"); break;
+        case 9: printf("September\n"); break;
+        case 10: printf("October\n"); break;
+        case 11: printf("November\n"); break;
+        case 12: printf("December\n"); break;
+        default: printf("Invalid input! Please enter a number between 1 and 12.\n");
+    }
+}
+
+int main() {
+    int month;
+    printf("Enter a number (1-12) to display the month: ");
+    scanf("%d", &month);
+    displayMonth(month);
+    return 0;
+}
+```
+
+---
+
+### 2. Calculator program using switch to perform basic operations
+
+```c
+#include <stdio.h>
+
+void calculator() {
+    char operator;
+    double num1, num2, result;
+
+    printf("Enter an operator (+, -, *, /): ");
+    scanf(" %c", &operator);
+    printf("Enter two numbers: ");
+    scanf("%lf %lf", &num1, &num2);
+
+    switch (operator) {
+        case '+': result = num1 + num2; break;
+        case '-': result = num1 - num2; break;
+        case '*': result = num1 * num2; break;
+        case '/': 
+            if (num2 != 0) {
+                result = num1 / num2;
+            } else {
+                printf("Error: Division by zero is not allowed.\n");
+                return;
+            }
+            break;
+        default: 
+            printf("Invalid operator!\n");
+            return;
+    }
+    printf("The result is: %.2lf\n", result);
+}
+
+int main() {
+    calculator();
+    return 0;
+}
+```
+
+---
+
+### 3. Menu-driven program for a library system using nested switch
+
+```c
+#include <stdio.h>
+
+void libraryMenu() {
+    int choice, bookId;
+
+    while (1) {
+        printf("\nLibrary System Menu:\n");
+        printf("1. Borrow a Book\n");
+        printf("2. Return a Book\n");
+        printf("3. Exit\n");
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
+
+        switch (choice) {
+            case 1:
+                printf("Enter the Book ID to borrow: ");
+                scanf("%d", &bookId);
+                printf("Book with ID %d has been borrowed.\n", bookId);
+                break;
+
+            case 2:
+                printf("Enter the Book ID to return: ");
+                scanf("%d", &bookId);
+                printf("Book with ID %d has been returned.\n", bookId);
+                break;
+
+            case 3:
+                printf("Exiting the Library System. Goodbye!\n");
+                return;
+
+            default:
+                printf("Invalid choice! Please select a valid option.\n");
+        }
+    }
+}
+
+int main() {
+    libraryMenu();
+    return 0;
+}
+```
+
+---
+
+### Explanation:
+
+1. **Month Program**: Uses a `switch` statement to map numbers (1-12) to their corresponding month names.
+2. **Calculator Program**: Utilizes a `switch` statement to perform operations based on the operator entered by the user.
+3. **Library System**: Implements a menu-driven system using a `while` loop and `switch` statements, allowing the user to borrow, return, or exit the system.
+
+These programs are modular, user-friendly, and easy to test.
