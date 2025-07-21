@@ -68,6 +68,9 @@
     - [File inclusion guards](https://github.com/fromsantanu/C-Language/blob/main/pages/Chapter10-04.md)
 
 ##
+## Programming Exercises 
+   - [**Programming Exercises (Full Collection)**](https://github.com/fromsantanu/prg-exr/blob/main/README.md)
+##
 ## Part II - Advanced C Concepts  ![Static Badge](https://img.shields.io/badge/Work%20In%20Progress-008000)  
 11. **Memory Management**
     - [Static vs Dynamic memory allocation](#)
